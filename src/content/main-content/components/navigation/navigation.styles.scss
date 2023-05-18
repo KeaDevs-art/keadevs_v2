@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-bar {
+    display: flex;
+
+    .nav-list {
+      display: flex;
+
+      .nav-item {
+        list-style-type: none;
+
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+
+        .nav-link {
+          color: inherit;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

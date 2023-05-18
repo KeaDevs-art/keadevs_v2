@@ -1,0 +1,42 @@
+.side-content {
+  //   background-color: purple;
+  height: 100%;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .mode {
+    cursor: pointer;
+  }
+
+  .content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 5rem;
+      letter-spacing: -4px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      margin-top: 0.4rem;
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 1.8rem;
+      letter-spacing: 0.4rem;
+
+      span {
+        color: rgb(127, 225, 255);
+      }
+    }
+  }
+}
