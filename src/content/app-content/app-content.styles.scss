@@ -9,4 +9,20 @@
   display: flex;
   padding: 2% 4%;
   position: relative;
+
+  animation: appIn 2s ease-out;
+}
+
+@keyframes appIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

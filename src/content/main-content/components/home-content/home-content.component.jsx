@@ -12,14 +12,20 @@ import "./home-content.styles.scss";
 
 const GitHub = styled(GitHubIcon)`
   font-size: 2rem;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  color: #000000;
 `;
 const Twitter = styled(TwitterIcon)`
   font-size: 2rem;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  color: #000000;
 `;
 const LinkedIn = styled(LinkedInIcon)`
   font-size: 2rem;
+  cursor: pointer;
+  color: #000000;
 `;
 
 const HomeContent = () => {
@@ -37,15 +43,27 @@ const HomeContent = () => {
           <span className="number">001</span>
           <div className="about-me--text">
             <h2>About Me</h2>
-            <p>some lorem eight could do here</p>
-            <p>have to figure out only</p>
-            <p>alright then</p>
+            <p>Front-end Software Engineer</p>
+            <p>Developing for the Web and Mobile</p>
+            <p>In React technologies</p>
           </div>
         </div>
         <div className="media-platforms">
-          <GitHub />
+          <a
+            href="https://github.com/KeaDevs-art"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHub />
+          </a>
           <Twitter />
-          <LinkedIn />
+          <a
+            href="https://za.linkedin.com/in/kea-devs-2b1019264"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedIn />
+          </a>
         </div>
         <p className="copy-text">
           <span className="copy-sign">&copy;</span> OFF CAMERA by keadevs 2023
