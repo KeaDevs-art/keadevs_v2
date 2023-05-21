@@ -32,6 +32,10 @@
   align-items: center;
   padding: 5% 10.5%;
   background-color: rgba(250, 250, 250, 0.607);
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
 }
 
 /* a {

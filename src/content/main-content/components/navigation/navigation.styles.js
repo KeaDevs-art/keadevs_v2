@@ -1,10 +1,23 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+
+export const Menu = styled(MenuIcon)`
+
+`;
+
+export const DarkMode = styled(DarkModeIcon)``;
 
 export const NavigationContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${'' /* background-color: green; */}
+  @media only screen and (max-width: 600px) {
+    padding-top: 1rem;
+  }
 `;
 
 export const Resume = styled.a`
@@ -18,6 +31,10 @@ export const Resume = styled.a`
 
 export const NavLinks = styled.nav`
   display: flex;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const NavLink = styled(Link)`

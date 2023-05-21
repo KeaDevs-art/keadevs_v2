@@ -11,12 +11,18 @@
   position: relative;
 
   animation: appIn 2s ease-out;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
 }
 
 @keyframes appIn {
   0% {
     opacity: 0;
-    transform: translateY(-10rem);
+    transform: translateY(-15rem);
   }
   50% {
     opacity: 0.6;

@@ -1,8 +1,13 @@
-main {
+.home-main {
   // background-color: red;
   height: 97.27%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: 600px) {
+    height: 95%;
+    display: grid;
+  }
 
   .graphical {
     // background-color: blue;
@@ -10,7 +15,40 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+
+    .mobile-head {
+      display: none;
+    }
+    .mobile {
+      display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .laptop {
+        display: none;
+      }
+      .mobile-head {
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+      .mobile {
+        transform: rotate(270deg);
+        position: absolute;
+        bottom: 50%;
+        display: block;
+
+        h1 {
+          font-size: 3.5rem;
+          letter-spacing: -4px;
+          font-weight: 700;
+        }
+      }
+    }
+
     .window {
       margin-top: 1rem;
       background: linear-gradient(
@@ -24,7 +62,15 @@ main {
       align-items: end;
       height: 50%;
       width: 70%;
-  
+
+      @media only screen and (max-width: 600px) {
+        width: 60%;
+        height: 40%;
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+      }
+
       a {
         text-decoration: none;
         background-color: black;
@@ -34,13 +80,17 @@ main {
       }
     }
   }
-  
+
   .textual {
     // background-color: purple;
     height: 100%;
     position: relative;
     display: grid;
-  
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+
     .about-me {
       // background-color: yellow;
       display: flex;
@@ -52,14 +102,14 @@ main {
       bottom: 35%;
       right: 0;
       transform: rotate(90deg);
-  
+
       .number {
         font-family: "Electrolize", sans-serif;
         font-size: 8rem;
         letter-spacing: -8px;
         margin-right: 3.5rem;
       }
-  
+
       h2 {
         margin-bottom: 0.4rem;
       }
@@ -67,10 +117,16 @@ main {
         font-weight: 500;
       }
     }
-  
+
     .media-platforms {
       justify-self: end;
       align-self: end;
+
+      @media only screen and (max-width: 600px) {
+        //  display: flex;
+        //  flex-direction: column;
+        display: none;
+      }
     }
     .copy-text {
       transform: rotate(90deg);
@@ -78,18 +134,23 @@ main {
       right: -21%;
       bottom: 35%;
       color: rgba(0, 0, 0, 0.3);
-  
+
       .copy-sign {
         font-size: 1.7rem;
       }
     }
   }
-  
+
   .avatar {
     width: 30%;
     height: 80%;
     position: absolute;
     left: 40%;
     bottom: 0;
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+      height: 60%;
+    }
   }
 }
