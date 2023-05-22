@@ -27,24 +27,24 @@
       .laptop {
         display: none;
       }
-      .mobile-head {
-        display: block;
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-      }
       .mobile {
         transform: rotate(270deg);
         position: absolute;
-        bottom: 50%;
+        bottom: 51%;
+        left: -18%;
         display: block;
 
         h1 {
-          font-size: 3.5rem;
+          font-size: 3.8rem;
           letter-spacing: -4px;
           font-weight: 700;
+        }
+        p {
+          font-size: 1.15rem;
+        }
+
+        @media screen and ( max-height: 640px ) {
+          bottom: 54%;
         }
       }
     }
@@ -150,7 +150,7 @@
 
     @media only screen and (max-width: 600px) {
       width: 80%;
-      height: 60%;
+      height: 68%;
     }
   }
 }

@@ -27,11 +27,6 @@ const LinkedIn = styled(LinkedInIcon)`
   cursor: pointer;
   color: #000000;
 `;
-// const Menu = styled(MenuIcon)`
-//   font-size: 2rem;
-//   cursor: pointer;
-//   color: #000000;
-// `;
 
 const HomeContent = () => {
   return (
@@ -41,18 +36,13 @@ const HomeContent = () => {
           <p>Front-End</p>
           <p>Software Engineer</p>
         </div>
-        <div className="mobile-head">
-            <h2>About Me</h2>
-            <p>Developing for the Web and Mobile</p>
-            {/* <p>In React technologies</p> */}
-          </div>
         <div className="mobile">
           <h1>
             kea.devs_<sup>&copy;</sup>{" "}
           </h1>
-          <p>
-            <i>Front-end Software Engineer</i>
-          </p>
+          <p>In React technologies</p>
+          <p>Front-end Software Engineer</p>
+          <p>Developing for the Web and Mobile</p>
         </div>
         <div className="window">
           <a href="#">&rarr;</a>

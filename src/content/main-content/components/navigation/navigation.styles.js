@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 export const Menu = styled(MenuIcon)`
-
+  display: none;
 `;
 
 export const DarkMode = styled(DarkModeIcon)``;
@@ -14,7 +14,7 @@ export const NavigationContainer = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  ${'' /* background-color: green; */}
+  ${"" /* background-color: green; */}
   @media only screen and (max-width: 600px) {
     padding-top: 1rem;
   }
@@ -52,7 +52,7 @@ export const NavLink = styled(Link)`
 
   &::after {
     content: "";
-    height: .2rem;
+    height: 0.2rem;
     width: 0;
     background-color: currentColor;
     position: absolute;

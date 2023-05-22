@@ -1,5 +1,8 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Outlet } from "react-router-dom";
+
+import { NavigationContext } from "../../../../contexts/navigation.context.jsx";
+import MobileNavigation from "./mobile-navigation.jsx";
 
 import {
   Menu,
@@ -10,11 +13,15 @@ import {
   DarkMode,
 } from "./navigation.styles.js";
 
+// --------------------- imports ---------------- imports --
+
 const Navigation = () => {
+  const { isNavActive, handleMenu } = useContext(NavigationContext);
+
   return (
     <Fragment>
       <NavigationContainer>
-        <Menu />
+        <Menu fontSize="medium" onClick={handleMenu} />
         <Resume href="/Resume.docx" download>
           Download CV
         </Resume>
@@ -24,9 +31,15 @@ const Navigation = () => {
           <NavLink to="/projects">projects</NavLink>
           <NavLink to="/contact">contact</NavLink>
         </NavLinks>
-        <DarkMode />
+        <DarkMode fontSize="medium" />
       </NavigationContainer>
-      <Outlet />
+      {isNavActive ? (
+        <MobileNavigation>
+          <Outlet />
+        </MobileNavigation>
+      ) : (
+        <Outlet />
+      )}
     </Fragment>
   );
 };
