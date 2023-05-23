@@ -1,12 +1,13 @@
 // import { ProjectsMain, Box } from "./projects.styles";
+import { HeadingSecondary } from "../../../../Typography/heading-secondary/heading-secondary.styles";
+import ProjectImg from "../../../../assets/NewsHomePage.jpeg";
 import "./projects.styles.scss";
-import ProjectImg from "../../../../assets/project_1.png";
 
 const Projects = () => {
   return (
     <main className="projects-main">
       <div className="pro">
-      <h2>Projects</h2>
+      <HeadingSecondary>My Work</HeadingSecondary>
       <div className="projects">
         <div className="box header">
           <h3>Pro_1</h3>

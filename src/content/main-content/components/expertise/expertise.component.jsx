@@ -1,29 +1,35 @@
+import TerminalIcon from '@mui/icons-material/Terminal';
+import DevicesIcon from '@mui/icons-material/Devices';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+
+import { HeadingSecondary } from "../../../../Typography/heading-secondary/heading-secondary.styles.js";
 import { ExpertiseMain, GlassesContainer, Glass } from "./expertise.styles.js";
 
 const Expertise = () => {
   return (
     <ExpertiseMain>
+      <HeadingSecondary>My Expertise</HeadingSecondary>
       <GlassesContainer>
         <Glass>
           <h1>Software Development</h1>
-        <p>
-          Experienced in both functional and OOP: Dart, Python, Java,
-          JavaScript, TypeScript.
-        </p>
+          <p>
+            Experienced in both functional and OOP: Python, Java,
+            JavaScript, TypeScript.
+          </p>
         </Glass>
         <Glass>
-          <h1>Frontend Dev React, NextJS</h1>
-        <p>
-          Passionate about UI/UX. Over 4 years of development experience in
-          HTML, CSS, JS, React and NextJS frameworks.
-        </p>
+          <h1>Frontend React</h1>
+          <p>
+          Passionate about UI aesthetics. 
+          Experienced in React framework development.
+          </p>
         </Glass>
         <Glass>
-          <h1>Flutter Dev Android, iOS</h1>
-        <p>
-          Skilled in developing hybrid mobile apps and cross-platform solutions
-          using the Flutter framework.
-        </p>
+          <h1>React Native Android & iOS</h1>
+          <p>
+            Skilled in developing hybrid mobile apps and cross-platform
+            solutions using the React Native framework.
+          </p>
         </Glass>
       </GlassesContainer>
     </ExpertiseMain>

@@ -1,10 +1,5 @@
-import { DetailParagraph } from "./detail.styles";
+import styled from "styled-components";
 
-const Detail = ({ children }) => {
-
-    return (
-        <DetailParagraph>{children}</DetailParagraph>
-    );
-}
-
-export default Detail;
+export const Detail = styled.p`
+  font-size: 1.15rem;
+`;

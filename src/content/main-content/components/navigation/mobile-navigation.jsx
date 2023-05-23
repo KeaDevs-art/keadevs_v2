@@ -98,7 +98,7 @@ const MobileNavigation = () => {
         <img className="avatar--img" src={Avatar} />
         <h1 className="name">kea.devs_</h1>
         <a className="mail" href="mailto:iamkeadevs@gmail">
-          iamkeadevs@gmail
+          iamkeadevs@gmail.com
         </a>
       </div>
       <div className="nav-links">

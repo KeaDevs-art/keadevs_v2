@@ -4,19 +4,29 @@ import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 export const Menu = styled(MenuIcon)`
-  display: none;
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
 `;
 
-export const DarkMode = styled(DarkModeIcon)``;
+export const DarkMode = styled(DarkModeIcon)`
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+`;
 
 export const NavigationContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  ${"" /* background-color: green; */}
   @media only screen and (max-width: 600px) {
     padding-top: 1rem;
+  }
+  .MuiSvgIcon-root {
+    @media only screen and (min-width: 600px) {
+      display: none;
+    }
   }
 `;
 

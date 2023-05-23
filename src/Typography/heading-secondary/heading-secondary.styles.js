@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Heading = styled.h2`
-  line-height: 1.5;
-  letter-spacing: 2.2;
-  font-size: 5vw;
+export const HeadingSecondary = styled.h2`
+  text-align: center;
+  font-size: 2.4rem;
+  margin: .8rem auto;
 `;
