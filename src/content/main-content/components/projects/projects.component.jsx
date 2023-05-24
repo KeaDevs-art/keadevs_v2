@@ -1,7 +1,7 @@
 // import { ProjectsMain, Box } from "./projects.styles";
 import ProjectOne from "../../../../assets/resapp.jpg";
 import ProjectTwo from "../../../../assets/budget.webp";
-import ProjectThree from "../../../../assets/NewsHomePage.jpeg";
+import ProjectThree from "../../../../assets/crwnclothing.jpeg";
 import ProjectFour from "../../../../assets/InstrumentoPage.jpeg";
 import "./projects.styles.scss";
 
