@@ -37,6 +37,10 @@ export const Resume = styled.a`
   border-radius: 0.4rem;
   cursor: pointer;
   text-decoration: none;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 `;
 
 export const NavLinks = styled.nav`

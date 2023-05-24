@@ -43,7 +43,7 @@
           font-size: 1.15rem;
         }
 
-        @media screen and ( max-height: 640px ) {
+        @media screen and (max-height: 640px) {
           bottom: 54%;
         }
       }
@@ -69,6 +69,14 @@
         position: absolute;
         left: 0;
         bottom: 0%;
+      }
+      @media only screen and (min-width: 1080px) {
+        height: 38%;
+        width: 78%;
+      }
+      @media only screen and (min-width: 1200px) {
+        width: 60%;
+        height: 40%;
       }
 
       a {
@@ -116,6 +124,13 @@
       &--text {
         font-weight: 500;
       }
+
+      @media only screen and (min-width: 1080px) {
+        right: -29%;
+      }
+      @media only screen and (min-width: 1200px) {
+        right: 0;
+      }
     }
 
     .media-platforms {
@@ -138,6 +153,13 @@
       .copy-sign {
         font-size: 1.7rem;
       }
+
+      @media only screen and (min-width: 1080px) {
+        right: -28%;
+      }
+      @media only screen and (min-width: 1200px) {
+        right: -21%;
+      }
     }
   }
 
@@ -151,6 +173,14 @@
     @media only screen and (max-width: 600px) {
       width: 80%;
       height: 68%;
+    }
+    @media only screen and (min-width: 1080px) {
+      height: 67%;
+      width: 36%;
+    }
+    @media only screen and (min-width: 1200px) {
+      width: 30%;
+      height: 80%;
     }
   }
 }

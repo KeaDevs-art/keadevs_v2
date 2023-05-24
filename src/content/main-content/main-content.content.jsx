@@ -4,18 +4,11 @@ import Navigation from "./components/navigation/navigation.component";
 import HomeContent from "./components/home-content/home-content.component";
 import Expertise from "./components/expertise/expertise.component";
 import Projects from "./components/projects/projects.component";
+import Contact from "./components/contact/contact.component";
 
 import { MainContentContainer } from "./main-content.styles";
 
 // --------------- imports ------------- imports --------
-
-function Contact() {
-  return (
-    <div>
-      <h1>Contact</h1>
-    </div>
-  );
-}
 
 const MainContent = () => {
   return (

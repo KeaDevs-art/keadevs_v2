@@ -33,11 +33,33 @@ export const Glass = styled.div`
   border: 0.15rem solid rgba(255, 255, 255, 0.8);
   padding: 1.4rem;
 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .glass-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .MuiSvgIcon-root {
+      font-size: 4rem;
+    }
+
+    h1 {
+      margin: 1.4rem auto;
+    }
+  }
+
   p {
-    font-size: 1.15rem;
+    font-size: 1.2em;
   }
 
   @media only screen and (max-width: 600px) {
     width: 90%;
+
+    &:last-child {
+    margin-bottom: 2rem;
+  }
   }
 `;

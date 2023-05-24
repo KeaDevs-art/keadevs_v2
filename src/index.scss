@@ -17,6 +17,13 @@
   font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
   /* background-image: url("./assets/exp_bg.jpg"); */
+
+  @media only screen and (min-width: 1080px) {
+    font-size: 52%;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 62.5%
+  }
 }
 
 * {
