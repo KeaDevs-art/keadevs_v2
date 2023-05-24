@@ -22,7 +22,7 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <Menu fontSize="medium" onClick={handleMenu} />
-        <Resume href="/Resume.docx" download>
+        <Resume href="/Resume.pdf" download>
           Download CV
         </Resume>
         <NavLinks>
