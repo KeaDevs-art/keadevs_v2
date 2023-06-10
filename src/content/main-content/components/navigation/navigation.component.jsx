@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 
 import { NavigationContext } from "../../../../contexts/navigation.context.jsx";
 import MobileNavigation from "./mobile-navigation.jsx";
+import { ThemeMode } from "../../../../components/theme-mode/theme-mode.component.jsx";
 
 import {
   Menu,
@@ -31,7 +32,7 @@ const Navigation = () => {
           <NavLink to="/projects">projects</NavLink>
           <NavLink to="/contact">contact</NavLink>
         </NavLinks>
-        <DarkMode fontSize="medium" />
+        <ThemeMode fontSize="medium" />
       </NavigationContainer>
       {isNavActive ? (
         <MobileNavigation>

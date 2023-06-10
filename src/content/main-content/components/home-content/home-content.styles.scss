@@ -8,6 +8,9 @@
     height: 95%;
     display: grid;
   }
+  // @media only screen and (min-width: 720px) {
+  //   height: 96.4%;
+  // }
 
   .graphical {
     // background-color: blue;
@@ -70,6 +73,12 @@
         left: 0;
         bottom: 0%;
       }
+      // @media only screen and (min-width: 720px) {
+      //   width: 30%;
+      //   height: 40%;
+      //   position: absolute;
+      //   bottom: 24%;
+      // }
       @media only screen and (min-width: 1080px) {
         height: 38%;
         width: 78%;
@@ -116,6 +125,10 @@
         font-size: 8rem;
         letter-spacing: -8px;
         margin-right: 3.5rem;
+
+        // @media only screen and (min-width: 720px) {
+        //   font-size: 7rem;
+        // }
       }
 
       h2 {
@@ -125,6 +138,9 @@
         font-weight: 500;
       }
 
+      // @media only screen and (min-width: 720px) {
+      //   bottom: 44%;
+      // }
       @media only screen and (min-width: 1080px) {
         right: -29%;
       }
@@ -154,6 +170,9 @@
         font-size: 1.7rem;
       }
 
+      // @media only screen and (min-width: 720px) {
+      //   right: -33%;
+      // }
       @media only screen and (min-width: 1080px) {
         right: -28%;
       }
@@ -174,6 +193,10 @@
       width: 80%;
       height: 68%;
     }
+    // @media only screen and (min-width: 720px) {
+    //   width: 34%;
+    //   height: 68%;
+    // }
     @media only screen and (min-width: 1080px) {
       height: 67%;
       width: 36%;

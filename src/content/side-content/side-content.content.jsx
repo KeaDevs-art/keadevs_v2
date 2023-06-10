@@ -1,25 +1,14 @@
-import { useState } from "react";
-
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
+import { ThemeMode } from "../../components/theme-mode/theme-mode.component";
 
 import "./side-content.styles.scss";
 
 // ---------------- imports ------------------ imports ----
 
 const SideContent = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const toggleMode = () => setIsDarkMode(!isDarkMode);
 
   return (
     <div className="side-content">
-      <div className="mode">
-        {isDarkMode ? (
-          <LightModeIcon onClick={toggleMode} />
-        ) : (
-          <DarkModeIcon onClick={toggleMode} />
-        )}
-      </div>
+      <ThemeMode />
       <div className="content">
         <div>
           <h1>

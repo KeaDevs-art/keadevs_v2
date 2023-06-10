@@ -60,6 +60,10 @@ export const NavLink = styled(Link)`
 
   &:not(:last-child) {
     margin-right: 4rem;
+
+    ${'' /* @media only screen and (min-width: 720px) {
+      margin-right: 3rem;
+    } */}
   }
 
   position: relative;
